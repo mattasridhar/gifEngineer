@@ -1,5 +1,8 @@
 
 testFolder
-__pycache__/GifEngineer.cpython-38.pyc
+__pycache__/
 .DS_Store
 .vscode/
+build/
+dist/
+GifEngineer.spec
