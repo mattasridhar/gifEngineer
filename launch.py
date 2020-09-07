@@ -4,11 +4,11 @@ from tkinter import filedialog, Text
 from GifEngineer import GifEngineer
 
 titleText = 'Gif Engineer'
-imageDirBtnText = 'Select Images directory'
-videoDirBtnText = 'Select Video directory'
+
 gifFrmImgBtnText = 'Create GIF using Images'
+gifFrmGifsBtnText = 'Create GIF using GIFs'
 gifFrmVidBtnText = 'Create GIF using Video'
-choiceMade = 'fromImages'
+labelText = 'Please select the desired option and then the source directory/file. \nThe Gif will be created and rendered here. \nPlease be patient while it is processed!'
 
 gifEngineer = GifEngineer()
 
@@ -20,21 +20,20 @@ canvas.pack()
 window.resizable(False, False)  # to prevent user from resizing the window
 window.title(titleText)  # window title
 
+label = tkt.Label(window, text=labelText).place(x=150, y=150)
+
+# creating buttons and adding to frame
 gifFrmImgBtn = tkt.Button(window, text=gifFrmImgBtnText, padx=0.5,
-                          pady=0.5, bg='#454545', borderwidth=0, command=lambda: gifEngineer.loadImgSrcDir(window)).place(x=0, y=0)  # creating button and adding to frame
-# gifFrmImgBtn.pack(side='left')
+                          pady=0.5, bg='#454545', borderwidth=0, command=lambda: gifEngineer.loadImgSrcDir(window)).place(x=0, y=0)
+
+gifFrmGifsBtn = tkt.Button(window, text=gifFrmGifsBtnText, padx=0.5,
+                           pady=0.5, bg='#454545', borderwidth=0, command=lambda: gifEngineer.loadGIFSrcDir(window)).place(x=275, y=0)
 
 gifFrmVidBtn = tkt.Button(window, text=gifFrmVidBtnText, padx=0.5,
-                          pady=0.5, bg='#454545', borderwidth=0, command=lambda: gifEngineer.loadImgSrcDir(window)).place(x=532, y=0)  # creating button and adding to frame
-# gifFrmVidBtn.pack(side='right')
-
-# dirBtn = tkt.Button(frame, text=imageDirBtnText, padx=0.5,
-#                     pady=0.5, bg='#b5b5b5', borderwidth=0, command=lambda: gifEngineer.loadImgSrcDir(frame))  # creating button and adding to frame
-# dirBtn.pack()
-# dirBtn.place(bordermode='outside', relwidth=0.5, relheight=0.5, relx=0.1, rely=0.1)
+                          pady=0.5, bg='#454545', borderwidth=0, command=lambda: gifEngineer.loadVideoSrcDir(window)).place(x=532, y=0)
 
 # handle window close
-window.protocol("WM_DELETE_WINDOW", gifEngineer.windowClose(window))
+window.protocol("WM_DELETE_WINDOW", lambda: gifEngineer.windowClose(window))
 
 # show the created window
 window.mainloop()
