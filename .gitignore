@@ -2,3 +2,4 @@
 testFolder
 __pycache__/GifEngineer.cpython-38.pyc
 .DS_Store
+.vscode/
