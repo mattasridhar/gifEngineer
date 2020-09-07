@@ -79,7 +79,7 @@ INSTALLATION NOTES\
 <li> ‘Build’ </li>
 	<ul>
 		<li> Navigate into your /GifEngineer/ </li>
-		<li> Run the following command for Mac OS executable: <br><b>npm run build-osx</b></li>
+		<li> Run the following command for Mac OS executable: <br><b>python setup.py py2app</b></li>
 		<li> Run the following command for Windows OS executable: <br><b>pyinstaller --onefile -w GifEngineer.py</b></li>
 	</ul>
 	</ol>
