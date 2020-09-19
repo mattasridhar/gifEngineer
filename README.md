@@ -15,7 +15,8 @@ INTRODUCTION\
 <br><br>
 <b>Check out this video to see the demo.</b>
 
-<!-- [![](http://img.youtube.com/vi/975EA6fWZ2s/0.jpg)](https://www.youtube.com/watch?v=975EA6fWZ2s) -->
+[![](http://img.youtube.com/watch?v=t9d-gSbb9cw&ab_channel=HighbrowFrolics/0.jpg)](https://www.youtube.com/watch?v=t9d-gSbb9cw&ab_channel=HighbrowFrolics)
+
 <pre><i>If the above video doesn't seem to work, you can find the same clip of Demo at (~/readme_figs/DemoVideos/FortuneWheelDemo.mov) location.</i></pre>
 
 SPECIFICATIONS
@@ -68,17 +69,17 @@ INSTALLATION NOTES\
 <ol type="A">
 <li> GifEngineer Application’ </li>
 	<ul>
-		<li> Navigate into your /GifEngineer/ </li>
+		<li> Navigate into your /gifEngineer/ </li>
 		<li> Run the application: <b>python GifEngineer.py</b></li>
 	</ul>
 <li> Installing Dependencies </li>
 	<ul>
-		<li> Navigate into your /GifEngineer/ </li>
+		<li> Navigate into your /gifEngineer/ </li>
 		<li> Double the following file: <b>dependencies_install.bat</b></li>
 	</ul>
 <li> ‘Build’ </li>
 	<ul>
-		<li> Navigate into your /GifEngineer/ </li>
+		<li> Navigate into your /gifEngineer/ </li>
 		<li> Run the following command for Mac OS executable: <br><b>python setup.py py2app</b></li>
 		<li> Run the following command for Windows OS executable: <br><b>pyinstaller --onefile -w GifEngineer.py</b></li>
 	</ul>

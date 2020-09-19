@@ -20,7 +20,10 @@ canvas.pack()
 window.resizable(False, False)  # to prevent user from resizing the window
 window.title(titleText)  # window title
 
-label = tkt.Label(window, text=labelText).place(x=150, y=150)
+label = tkt.Label(window, text=labelText, fg='#ffffff',
+                  bg='#454545').place(x=150, y=150)
+signLabel = tkt.Label(window, text="@ Sridhar's Stuff",
+                      fg='#ffffff', bg='#454545').place(x=580, y=320)
 
 # creating buttons and adding to frame
 gifFrmImgBtn = tkt.Button(window, text=gifFrmImgBtnText, padx=0.5,
