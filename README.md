@@ -1,5 +1,9 @@
-<b>gifEngineer:</b>
-A desktop application built on python for creating GIF
+<p align="center">
+  <img width="450" height="250" alt="Highbrow Frolics" src="readme_figs/FullLogo.png">
+</p>
+</br>
+<h2>gifEngineer:</h2>
+<b>A desktop application built on python for creating GIF</b>
 
 TABLE OF CONTENTS
 
